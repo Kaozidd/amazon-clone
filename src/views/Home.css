@@ -6,6 +6,10 @@
     max-width: 1500px;
 }
 
+.home__container {
+    background: rgb(220, 223, 223);
+}
+
 .home__banner {
     width: 100%;
     z-index: -1;

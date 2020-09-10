@@ -8,15 +8,6 @@ function Checkout() {
 
     const [{ basket }, dispatch] = useStateValue();
 
-    var products = basket.map(function(item){
-        return <ProductCheckout 
-            id={item.id}
-            title={item.title}
-            image={item.image}
-            price={item.price}
-            rating={item.rating}
-        />
-      })
     return <div className="checkout">
         <div className="checkout__left">
             <img 
@@ -26,9 +17,17 @@ function Checkout() {
             />
             <div>
                 <h2 className="checkout__title">Your shopping basket</h2>
-                <div>
-                    {products}
-                </div>
+
+                {basket.map(item => (
+                    <ProductCheckout 
+                        id={item.id}
+                        title={item.title}
+                        image={item.image}
+                        price={item.price}
+                        rating={item.rating}
+                />
+                ))}
+
             </div>
         </div>
         <div className="checkout__right">

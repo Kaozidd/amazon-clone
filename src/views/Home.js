@@ -41,7 +41,7 @@ function Home() {
                     />
                     <Product 
                         id={696969}
-                        title='Deluxe Pair of M1911s, .45 ACP rounds,  modified with pivot-style triggers "Ebony & Ivory'
+                        title='Deluxe Pair of M1911s, .45 ACP rounds,  modified with pivot-style triggers "Ebony & Ivory"'
                         image='http://img2.wikia.nocookie.net/__cb20110124163611/capcomdatabase/images/c/cb/Ebony%26Ivory.png'
                         price={13699.99}
                         rating={5}
