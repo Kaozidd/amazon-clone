@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { CreateContext, useContext, useReducer, createContext } from 'react';
 
 export const StateContext = createContext();

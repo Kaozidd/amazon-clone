@@ -4,7 +4,8 @@ import CurrencyFormat from 'react-currency-format';
 import { useStateValue } from '../StateProvider';
 
 function Product({id, title, image, price, rating}) {
-    const [{ basket }, dispatch] = useStateValue();
+    // eslint-disable-next-line
+    const [{ state }, dispatch] = useStateValue();
 
     const addToBasket = () => {
         // dispatch item to data layer
